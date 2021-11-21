@@ -13,7 +13,7 @@ module Jekyll
             end
 
             def convert(content)
-                output = `node _12y.js <<EOF\n#{content}\nEOF`
+                `node _12y.js <<EOF\n#{content}\nEOF`
             end   
         end
     end

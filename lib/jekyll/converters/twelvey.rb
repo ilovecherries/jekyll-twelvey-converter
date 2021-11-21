@@ -3,6 +3,7 @@ module Jekyll
         class TwelveY < Converter
             safe false
             priority :low
+            @@root = File.expand_path('_12y.js', File.dirname(__FILE__))
 
             def matches(ext)
                 ext =~ /^\.12y$/i
@@ -13,7 +14,7 @@ module Jekyll
             end
 
             def convert(content)
-                `node _12y.js <<EOF\n#{content}\nEOF`
+                `node #{@@root} <<EOF\n#{content}\nEOF`
             end   
         end
     end

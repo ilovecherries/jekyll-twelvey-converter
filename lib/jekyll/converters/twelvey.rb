@@ -5,7 +5,7 @@ module Jekyll
             priority :low
 
             def matches(ext)
-                ext =~ /^\.12$/i
+                ext =~ /^\.12y$/i
             end
 
             def output_ext(ext)

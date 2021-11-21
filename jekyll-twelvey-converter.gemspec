@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative "lib/jekyll-textile-converter/version"
+require_relative "lib/jekyll-twelvey-converter/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-twelvey-converter"

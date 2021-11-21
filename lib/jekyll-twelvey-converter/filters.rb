@@ -5,7 +5,7 @@ module Jekyll
     # input - The Textile String to convert.
     #
     # Returns the HTML formatted String.
-    def textilize(input)
+    def twelveyize(input)
       site = @context.registers[:site]
       converter = if site.respond_to?(:find_converter_instance)
         site.find_converter_instance(Jekyll::Converters::TwelveY)

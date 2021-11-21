@@ -1,5 +1,5 @@
 module Jekyll
-    class TwelveYConverter < Converter
+    class TwelveY < Converter
         safe false
         priority :low
 
